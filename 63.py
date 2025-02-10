@@ -1,0 +1,23 @@
+import string
+
+char = string.ascii_uppercase
+n = int(input("Enter the Number: "))
+
+if n <= 26 and n > 0:
+    for i in range(n):
+        for j in range(i+1):
+            print(char[i + j], end=" ")
+        print()
+
+else:
+    print("Out of Range!")
+    print("The alphabet have Contains only 26 letters")
+
+"""
+
+Enter the Number: 3
+A 
+B C 
+C D E 
+
+"""
